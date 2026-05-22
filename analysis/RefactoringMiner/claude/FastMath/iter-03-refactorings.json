@@ -1,0 +1,846 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "2a5ceb9c076759db488d2bb716295d2f09c901d2",
+	"url": "https://github.com/apache/commons-math/commit/2a5ceb9c076759db488d2bb716295d2f09c901d2",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private reduceForTrig(xa double, result double[]) : void extracted from public sin(x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2294,
+		"endLine": 2355,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public sin(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2328,
+		"endLine": 2328,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2333,
+		"endLine": 2333,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2335,
+		"endLine": 2335,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2336,
+		"endLine": 2336,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2334,
+		"endLine": 2334,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2323,
+		"endLine": 2337,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2323,
+		"endLine": 2332,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2332,
+		"endLine": 2337,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2294,
+		"endLine": 2319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private reduceForTrig(xa double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2311,
+		"endLine": 2311,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2314,
+		"endLine": 2314,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2315,
+		"endLine": 2315,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2316,
+		"endLine": 2316,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2317,
+		"endLine": 2317,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2308,
+		"endLine": 2318,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2308,
+		"endLine": 2313,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2313,
+		"endLine": 2318,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2321,
+		"endLine": 2371,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public sin(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2349,
+		"endLine": 2349,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "reduceForTrig(xa,reduceResults)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2312,
+		"endLine": 2312,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private reduceForTrig(xa double, result double[]) : void extracted from public cos(x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2357,
+		"endLine": 2409,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public cos(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2383,
+		"endLine": 2383,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2388,
+		"endLine": 2388,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2390,
+		"endLine": 2390,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2391,
+		"endLine": 2391,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2389,
+		"endLine": 2389,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2378,
+		"endLine": 2392,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2378,
+		"endLine": 2387,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2387,
+		"endLine": 2392,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2294,
+		"endLine": 2319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private reduceForTrig(xa double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2311,
+		"endLine": 2311,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2314,
+		"endLine": 2314,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2315,
+		"endLine": 2315,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2316,
+		"endLine": 2316,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2317,
+		"endLine": 2317,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2308,
+		"endLine": 2318,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2308,
+		"endLine": 2313,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2313,
+		"endLine": 2318,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2373,
+		"endLine": 2416,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public cos(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2395,
+		"endLine": 2395,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "reduceForTrig(xa,reduceResults)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2312,
+		"endLine": 2312,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private reduceForTrig(xa double, result double[]) : void extracted from public tan(x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2411,
+		"endLine": 2479,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public tan(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2444,
+		"endLine": 2444,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2449,
+		"endLine": 2449,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2451,
+		"endLine": 2451,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2452,
+		"endLine": 2452,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2450,
+		"endLine": 2450,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2439,
+		"endLine": 2453,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2439,
+		"endLine": 2448,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2448,
+		"endLine": 2453,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2294,
+		"endLine": 2319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private reduceForTrig(xa double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2311,
+		"endLine": 2311,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2314,
+		"endLine": 2314,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2315,
+		"endLine": 2315,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2316,
+		"endLine": 2316,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2317,
+		"endLine": 2317,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2308,
+		"endLine": 2318,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2308,
+		"endLine": 2313,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2313,
+		"endLine": 2318,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2418,
+		"endLine": 2476,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public tan(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2446,
+		"endLine": 2446,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "reduceForTrig(xa,reduceResults)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2312,
+		"endLine": 2312,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable reduceResults : double[] to result : double[] in method private reduceForTrig(xa double, result double[]) : void from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2327,
+		"endLine": 2327,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2328,
+		"endLine": 2328,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2307,
+		"endLine": 2307,
+		"startColumn": 50,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "result : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2311,
+		"endLine": 2311,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable reduceResults : double[] to result : double[] in method private reduceForTrig(xa double, result double[]) : void from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2382,
+		"endLine": 2382,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2383,
+		"endLine": 2383,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2307,
+		"endLine": 2307,
+		"startColumn": 50,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "result : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2311,
+		"endLine": 2311,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable reduceResults : double[] to result : double[] in method private reduceForTrig(xa double, result double[]) : void from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2443,
+		"endLine": 2443,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2444,
+		"endLine": 2444,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2307,
+		"endLine": 2307,
+		"startColumn": 50,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "result : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2311,
+		"endLine": 2311,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable reduceResults : double[] in method public sin(x double) : double from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2327,
+		"endLine": 2327,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2294,
+		"endLine": 2355,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public sin(x double) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2348,
+		"endLine": 2348,
+		"startColumn": 28,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2321,
+		"endLine": 2371,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public sin(x double) : double"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable reduceResults : double[] in method public cos(x double) : double from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2382,
+		"endLine": 2382,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2357,
+		"endLine": 2409,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public cos(x double) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2394,
+		"endLine": 2394,
+		"startColumn": 28,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2373,
+		"endLine": 2416,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public cos(x double) : double"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable reduceResults : double[] in method public tan(x double) : double from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2443,
+		"endLine": 2443,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2411,
+		"endLine": 2479,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tan(x double) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2445,
+		"endLine": 2445,
+		"startColumn": 28,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "reduceResults : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2418,
+		"endLine": 2476,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public tan(x double) : double"
+}]
+}
+]
+}]
+}

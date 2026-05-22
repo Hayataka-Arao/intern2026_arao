@@ -1,0 +1,13 @@
+agent,iter_no,Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+claude,0,java,org.apache.commons.math3.util,Precision,10,2,22,20,433,51,0,0,0.8636363636363636,33,2
+claude,1,java,org.apache.commons.math3.util,Precision,10,2,24,20,451,53,0,0,0.7916666666666666,33,2
+claude,2,java,org.apache.commons.math3.util,Precision,10,2,27,20,438,49,0,0,0.6666666666666666,33,2
+claude,3,java,org.apache.commons.math3.util,Precision,10,2,27,20,430,47,0,0,0.6666666666666666,33,2
+claude,4,java,org.apache.commons.math3.util,Precision,10,2,28,20,436,48,0,0,0.6428571428571429,33,2
+claude,5,java,org.apache.commons.math3.util,Precision,10,2,29,20,438,49,0,0,0.6206896551724138,33,2
+claude,6,java,org.apache.commons.math3.util,Precision,10,2,29,20,438,49,0,0,0.6206896551724138,33,2
+claude,7,java,org.apache.commons.math3.util,Precision,10,2,30,20,438,48,0,0,0.6,33,2
+claude,8,java,org.apache.commons.math3.util,Precision,10,2,30,20,438,48,0,0,0.5666666666666667,33,2
+claude,9,java,org.apache.commons.math3.util,Precision,10,2,32,20,453,49,0,0,0.53125,33,2
+claude,10,java,org.apache.commons.math3.util,Precision,10,2,33,20,461,50,0,0,0.5151515151515151,33,2
+claude,11,java,org.apache.commons.math3.util,Precision,10,2,33,20,461,50,0,0,0.5151515151515151,33,2

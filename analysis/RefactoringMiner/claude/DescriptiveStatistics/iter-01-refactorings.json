@@ -1,0 +1,204 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "25b9c39a2aacbe2819958760bf6cc23e146d4731",
+	"url": "https://github.com/apache/commons-math/commit/25b9c39a2aacbe2819958760bf6cc23e146d4731",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private invokeSetQuantile(percentileImpl UnivariateStatistic, p double) : void extracted from public getPercentile(p double) : double in class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 421,
+		"endLine": 461,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPercentile(p double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 445,
+		"endLine": 447,
+		"startColumn": 17,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 495,
+		"endLine": 512,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private invokeSetQuantile(percentileImpl UnivariateStatistic, p double) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 509,
+		"endLine": 511,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 416,
+		"endLine": 454,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPercentile(p double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "invokeSetQuantile(percentileImpl,p)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private invokeSetQuantile(percentileImpl UnivariateStatistic, p double) : void extracted from public setPercentileImpl(percentileImpl UnivariateStatistic) : void in class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 620,
+		"endLine": 649,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setPercentileImpl(percentileImpl UnivariateStatistic) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 634,
+		"endLine": 636,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 495,
+		"endLine": 512,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private invokeSetQuantile(percentileImpl UnivariateStatistic, p double) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 509,
+		"endLine": 511,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 632,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setPercentileImpl(percentileImpl UnivariateStatistic) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "invokeSetQuantile(percentileImpl,50.0d)"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(windowSize != INFINITE_WINDOW) to if(windowSize == INFINITE_WINDOW || getN() < windowSize) in method public addValue(v double) : void from class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 164,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(windowSize != INFINITE_WINDOW)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 155,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addValue(v double) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 164,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(windowSize == INFINITE_WINDOW || getN() < windowSize)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 155,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public addValue(v double) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable n : long in method public getStandardDeviation() : double from class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 255,
+		"endLine": 259,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "n : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 253,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

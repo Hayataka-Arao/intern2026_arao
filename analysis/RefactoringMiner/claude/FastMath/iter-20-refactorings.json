@@ -1,0 +1,9 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "0c286687bebe4d85d67a89901b637a94e64f0c79",
+	"url": "https://github.com/apache/commons-math/commit/0c286687bebe4d85d67a89901b637a94e64f0c79",
+	"refactorings": []
+}]
+}

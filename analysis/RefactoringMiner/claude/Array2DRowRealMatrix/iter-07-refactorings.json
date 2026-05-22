@@ -1,0 +1,777 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "0b1584ac92ea7e23034b77fff9d1c9e32784ee72",
+	"url": "https://github.com/apache/commons-math/commit/0b1584ac92ea7e23034b77fff9d1c9e32784ee72",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private dotProduct(a double[], b double[], length int) : double extracted from public multiply(m Array2DRowRealMatrix) : Array2DRowRealMatrix in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 193,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public multiply(m Array2DRowRealMatrix) : Array2DRowRealMatrix"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 48,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 591,
+		"endLine": 605,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private dotProduct(a double[], b double[], length int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 600,
+		"endLine": 600,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 602,
+		"endLine": 602,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 604,
+		"endLine": 604,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 601,
+		"endLine": 603,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 601,
+		"endLine": 603,
+		"startColumn": 42,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 193,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public multiply(m Array2DRowRealMatrix) : Array2DRowRealMatrix"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 37,
+		"endColumn": 70,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "dotProduct(data[row],mCol,nSum)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private checkVectorLength(v double[], expectedLength int) : void extracted from public operate(v double[]) : double[] in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 343,
+		"endLine": 362,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public operate(v double[]) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 349,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 349,
+		"endLine": 351,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 576,
+		"endLine": 589,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkVectorLength(v double[], expectedLength int) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 41,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 338,
+		"endLine": 350,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public operate(v double[]) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "checkVectorLength(v,nCols)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private dotProduct(a double[], b double[], length int) : double extracted from public operate(v double[]) : double[] in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 343,
+		"endLine": 362,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public operate(v double[]) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 356,
+		"endLine": 358,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 356,
+		"endLine": 358,
+		"startColumn": 45,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 591,
+		"endLine": 605,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private dotProduct(a double[], b double[], length int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 600,
+		"endLine": 600,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 602,
+		"endLine": 602,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 604,
+		"endLine": 604,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 601,
+		"endLine": 603,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 601,
+		"endLine": 603,
+		"startColumn": 42,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 338,
+		"endLine": 350,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public operate(v double[]) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 24,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "dotProduct(data[row],v,nCols)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private checkVectorLength(v double[], expectedLength int) : void extracted from public preMultiply(v double[]) : double[] in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 364,
+		"endLine": 385,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public preMultiply(v double[]) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 370,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 370,
+		"endLine": 372,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 576,
+		"endLine": 589,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkVectorLength(v double[], expectedLength int) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 41,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 352,
+		"endLine": 371,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public preMultiply(v double[]) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "checkVectorLength(v,nRows)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable dataRow : double[] in method public multiply(m Array2DRowRealMatrix) : Array2DRowRealMatrix from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 32,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "dataRow : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 602,
+		"endLine": 602,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable mCol : double[] to b : double[] in method private dotProduct(a double[], b double[], length int) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mCol : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 56,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "b : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 602,
+		"endLine": 602,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable nSum : int to length : int in method private dotProduct(a double[], b double[], length int) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 19,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nSum : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 74,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "length : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 601,
+		"endLine": 603,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable nCols : int to expectedLength : int in method private checkVectorLength(v double[], expectedLength int) : void from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nCols : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 349,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 584,
+		"endLine": 584,
+		"startColumn": 61,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "expectedLength : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable dataRow : double[] in method public operate(v double[]) : double[] from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 28,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "dataRow : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 602,
+		"endLine": 602,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable nCols : int to length : int in method private dotProduct(a double[], b double[], length int) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nCols : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 356,
+		"endLine": 358,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 74,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "length : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 601,
+		"endLine": 603,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable nRows : int to expectedLength : int in method private checkVectorLength(v double[], expectedLength int) : void from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nRows : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 370,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 584,
+		"endLine": 584,
+		"startColumn": 61,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "expectedLength : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,330 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "aba9aa416ded6ee9f805ee4058630a21f054d36a",
+	"url": "https://github.com/apache/commons-math/commit/aba9aa416ded6ee9f805ee4058630a21f054d36a",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private hasPositiveSign(v double) : boolean extracted from public atan2(y double, x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2623,
+		"endLine": 2744,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public atan2(y double, x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2700,
+		"endLine": 2700,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2623,
+		"endLine": 2633,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private hasPositiveSign(v double) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2632,
+		"endLine": 2632,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2635,
+		"endLine": 2712,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public atan2(y double, x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2652,
+		"endLine": 2652,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasPositiveSign(y)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2651,
+		"endLine": 2651,
+		"startColumn": 18,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasPositiveSign(x)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2680,
+		"endLine": 2680,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasPositiveSign(y)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private hasPositiveSign(v double) : boolean extracted from public atan2(y double, x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2623,
+		"endLine": 2744,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public atan2(y double, x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2647,
+		"endLine": 2647,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2640,
+		"endLine": 2640,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2685,
+		"endLine": 2685,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2708,
+		"endLine": 2708,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2696,
+		"endLine": 2696,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2689,
+		"endLine": 2689,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2700,
+		"endLine": 2700,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2712,
+		"endLine": 2712,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2623,
+		"endLine": 2633,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private hasPositiveSign(v double) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2632,
+		"endLine": 2632,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2635,
+		"endLine": 2712,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public atan2(y double, x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2652,
+		"endLine": 2652,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasPositiveSign(y)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2651,
+		"endLine": 2651,
+		"startColumn": 18,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasPositiveSign(x)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2680,
+		"endLine": 2680,
+		"startColumn": 20,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasPositiveSign(y)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter y : double to v : double in method private hasPositiveSign(v double) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2629,
+		"endLine": 2629,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "y : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2700,
+		"endLine": 2700,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2631,
+		"endLine": 2631,
+		"startColumn": 44,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "v : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2632,
+		"endLine": 2632,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter x : double to v : double in method private hasPositiveSign(v double) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2629,
+		"endLine": 2629,
+		"startColumn": 42,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "x : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2647,
+		"endLine": 2647,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2640,
+		"endLine": 2640,
+		"startColumn": 21,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2631,
+		"endLine": 2631,
+		"startColumn": 44,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "v : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2632,
+		"endLine": 2632,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2632,
+		"endLine": 2632,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

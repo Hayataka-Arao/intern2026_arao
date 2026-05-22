@@ -1,0 +1,1965 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "8a91c7418ab76ef8eee439f65dd3d55503627599",
+	"url": "https://github.com/apache/commons-math/commit/8a91c7418ab76ef8eee439f65dd3d55503627599",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInRowOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInRowOrder(visitor RealMatrixChangingVisitor) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 366,
+		"endLine": 379,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixChangingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 374,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 372,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 374,
+		"endLine": 376,
+		"startColumn": 47,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 372,
+		"endLine": 377,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 438,
+		"endLine": 462,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInRowOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 453,
+		"endLine": 454,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 457,
+		"endLine": 459,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 455,
+		"endLine": 460,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 457,
+		"endLine": 459,
+		"startColumn": 60,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 455,
+		"endLine": 460,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 366,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixChangingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 369,
+		"endLine": 371,
+		"startColumn": 16,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInRowOrderImpl(visitor,0,getRowDimension() - 1,0,getColumnDimension() - 1)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInRowOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInRowOrder(visitor RealMatrixPreservingVisitor) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 381,
+		"endLine": 394,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixPreservingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 389,
+		"endLine": 391,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 387,
+		"endLine": 392,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 389,
+		"endLine": 391,
+		"startColumn": 47,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 387,
+		"endLine": 392,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 464,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInRowOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 484,
+		"endLine": 484,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 479,
+		"endLine": 480,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 483,
+		"endLine": 485,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 481,
+		"endLine": 486,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 483,
+		"endLine": 485,
+		"startColumn": 60,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 481,
+		"endLine": 486,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 374,
+		"endLine": 380,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixPreservingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 377,
+		"endLine": 379,
+		"startColumn": 16,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInRowOrderImpl(visitor,0,getRowDimension() - 1,0,getColumnDimension() - 1)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInRowOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInRowOrder(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 396,
+		"endLine": 412,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 403,
+		"endLine": 404,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 408,
+		"endLine": 408,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 405,
+		"endLine": 410,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 407,
+		"endLine": 409,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 405,
+		"endLine": 410,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 407,
+		"endLine": 409,
+		"startColumn": 60,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 438,
+		"endLine": 462,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInRowOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 453,
+		"endLine": 454,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 455,
+		"endLine": 460,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 457,
+		"endLine": 459,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 455,
+		"endLine": 460,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 457,
+		"endLine": 459,
+		"startColumn": 60,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 382,
+		"endLine": 390,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 16,
+		"endColumn": 85,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInRowOrderImpl(visitor,startRow,endRow,startColumn,endColumn)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInRowOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInRowOrder(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 414,
+		"endLine": 430,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 421,
+		"endLine": 422,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 429,
+		"endLine": 429,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 423,
+		"endLine": 428,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 425,
+		"endLine": 427,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 423,
+		"endLine": 428,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 425,
+		"endLine": 427,
+		"startColumn": 60,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 464,
+		"endLine": 488,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInRowOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 479,
+		"endLine": 480,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 484,
+		"endLine": 484,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 481,
+		"endLine": 486,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 483,
+		"endLine": 485,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 481,
+		"endLine": 486,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 483,
+		"endLine": 485,
+		"startColumn": 60,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 392,
+		"endLine": 400,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInRowOrder(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 399,
+		"endLine": 399,
+		"startColumn": 16,
+		"endColumn": 85,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInRowOrderImpl(visitor,startRow,endRow,startColumn,endColumn)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInColumnOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInColumnOrder(visitor RealMatrixChangingVisitor) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 432,
+		"endLine": 445,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixChangingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 437,
+		"endLine": 437,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 439,
+		"endLine": 442,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 438,
+		"endLine": 443,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 439,
+		"endLine": 442,
+		"startColumn": 44,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 438,
+		"endLine": 443,
+		"startColumn": 43,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 490,
+		"endLine": 514,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInColumnOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 509,
+		"endLine": 509,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 510,
+		"endLine": 510,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 505,
+		"endLine": 506,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 508,
+		"endLine": 511,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 507,
+		"endLine": 512,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 508,
+		"endLine": 511,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 507,
+		"endLine": 512,
+		"startColumn": 56,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 402,
+		"endLine": 408,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixChangingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 405,
+		"endLine": 407,
+		"startColumn": 16,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInColumnOrderImpl(visitor,0,getRowDimension() - 1,0,getColumnDimension() - 1)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInColumnOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInColumnOrder(visitor RealMatrixPreservingVisitor) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 447,
+		"endLine": 459,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixPreservingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 454,
+		"endLine": 456,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 453,
+		"endLine": 457,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 454,
+		"endLine": 456,
+		"startColumn": 44,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 453,
+		"endLine": 457,
+		"startColumn": 43,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 516,
+		"endLine": 539,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInColumnOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 538,
+		"endLine": 538,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 531,
+		"endLine": 532,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 534,
+		"endLine": 536,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 533,
+		"endLine": 537,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 534,
+		"endLine": 536,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 533,
+		"endLine": 537,
+		"startColumn": 56,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 410,
+		"endLine": 416,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixPreservingVisitor) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 413,
+		"endLine": 415,
+		"startColumn": 16,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInColumnOrderImpl(visitor,0,getRowDimension() - 1,0,getColumnDimension() - 1)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInColumnOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInColumnOrder(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 461,
+		"endLine": 477,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 468,
+		"endLine": 469,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 473,
+		"endLine": 473,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 470,
+		"endLine": 475,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 471,
+		"endLine": 474,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 470,
+		"endLine": 475,
+		"startColumn": 56,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 471,
+		"endLine": 474,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 490,
+		"endLine": 514,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInColumnOrderImpl(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 505,
+		"endLine": 506,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 509,
+		"endLine": 509,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 510,
+		"endLine": 510,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 507,
+		"endLine": 512,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 508,
+		"endLine": 511,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 507,
+		"endLine": 512,
+		"startColumn": 56,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 508,
+		"endLine": 511,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 418,
+		"endLine": 426,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixChangingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 16,
+		"endColumn": 88,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInColumnOrderImpl(visitor,startRow,endRow,startColumn,endColumn)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private walkInColumnOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double extracted from public walkInColumnOrder(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double in class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 479,
+		"endLine": 494,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 486,
+		"endLine": 487,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 488,
+		"endLine": 492,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 489,
+		"endLine": 491,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 488,
+		"endLine": 492,
+		"startColumn": 56,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 489,
+		"endLine": 491,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 516,
+		"endLine": 539,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private walkInColumnOrderImpl(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 531,
+		"endLine": 532,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 538,
+		"endLine": 538,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 533,
+		"endLine": 537,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 534,
+		"endLine": 536,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 533,
+		"endLine": 537,
+		"startColumn": 56,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 534,
+		"endLine": 536,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 428,
+		"endLine": 436,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public walkInColumnOrder(visitor RealMatrixPreservingVisitor, startRow int, endRow int, startColumn int, endColumn int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 16,
+		"endColumn": 88,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "walkInColumnOrderImpl(visitor,startRow,endRow,startColumn,endColumn)"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable rowCount : int to nRows : int in method public add(m Array2DRowRealMatrix) : Array2DRowRealMatrix from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 19,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rowCount : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 154,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "nRows : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 154,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable columnCount : int to nCols : int in method public add(m Array2DRowRealMatrix) : Array2DRowRealMatrix from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "columnCount : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 158,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 19,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "nCols : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 158,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable rowCount : int to nRows : int in method public subtract(m Array2DRowRealMatrix) : Array2DRowRealMatrix from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 19,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rowCount : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 181,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 19,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "nRows : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 181,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable columnCount : int to nCols : int in method public subtract(m Array2DRowRealMatrix) : Array2DRowRealMatrix from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "columnCount : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 185,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 19,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "nCols : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 185,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rows : int in method public walkInRowOrder(visitor RealMatrixChangingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rows : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 369,
+		"endLine": 371,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable columns : int in method public walkInRowOrder(visitor RealMatrixChangingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "columns : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 369,
+		"endLine": 371,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rows : int in method public walkInRowOrder(visitor RealMatrixPreservingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rows : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 377,
+		"endLine": 379,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable columns : int in method public walkInRowOrder(visitor RealMatrixPreservingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "columns : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 377,
+		"endLine": 379,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rows : int in method public walkInColumnOrder(visitor RealMatrixChangingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rows : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 405,
+		"endLine": 407,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable columns : int in method public walkInColumnOrder(visitor RealMatrixChangingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "columns : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 405,
+		"endLine": 407,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable rows : int in method public walkInColumnOrder(visitor RealMatrixPreservingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 19,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "rows : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 413,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable columns : int in method public walkInColumnOrder(visitor RealMatrixPreservingVisitor) : double from class org.apache.commons.math3.linear.Array2DRowRealMatrix",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "columns : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/linear/Array2DRowRealMatrix.java",
+		"startLine": 413,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

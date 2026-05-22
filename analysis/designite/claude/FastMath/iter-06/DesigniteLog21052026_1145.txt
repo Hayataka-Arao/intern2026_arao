@@ -1,0 +1,15 @@
+Extracting code smells...
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffffffc0000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "ffffffff00000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "1.0p-52d" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "1.0p-23f" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Exception while parsing literal number (during Magic Number detection). For input string: "8000000000000000" under radix 16
+Done.

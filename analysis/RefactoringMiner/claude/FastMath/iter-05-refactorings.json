@@ -1,0 +1,1110 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "a8fdcf8267b8fd8834cf209834da7b9e029e8db7",
+	"url": "https://github.com/apache/commons-math/commit/a8fdcf8267b8fd8834cf209834da7b9e029e8db7",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private unsignedAddOverflowed(a long, b long, sum long) : boolean extracted from private reducePayneHanek(x double, result double[]) : void in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2211,
+		"endLine": 2211,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2225,
+		"endLine": 2225,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2124,
+		"endLine": 2124,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2082,
+		"endLine": 2271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2238,
+		"endLine": 2238,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2213,
+		"endLine": 2213,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2166,
+		"endLine": 2166,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,ac,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2141,
+		"endLine": 2141,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2150,
+		"endLine": 2150,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,bcShifted,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2222,
+		"endLine": 2222,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,bcShifted,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2256,
+		"endLine": 2256,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private unsignedAddOverflowed(a long, b long, sum long) : boolean extracted from private reducePayneHanek(x double, result double[]) : void in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2211,
+		"endLine": 2211,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2123,
+		"endLine": 2123,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2082,
+		"endLine": 2271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2238,
+		"endLine": 2238,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2213,
+		"endLine": 2213,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2166,
+		"endLine": 2166,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,ac,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2141,
+		"endLine": 2141,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2150,
+		"endLine": 2150,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,bcShifted,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2222,
+		"endLine": 2222,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,bcShifted,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2256,
+		"endLine": 2256,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private unsignedAddOverflowed(a long, b long, sum long) : boolean extracted from private reducePayneHanek(x double, result double[]) : void in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2139,
+		"endLine": 2139,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2160,
+		"endLine": 2160,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2142,
+		"endLine": 2143,
+		"startColumn": 14,
+		"endColumn": 44,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2082,
+		"endLine": 2271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2238,
+		"endLine": 2238,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2213,
+		"endLine": 2213,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2166,
+		"endLine": 2166,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,ac,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2141,
+		"endLine": 2141,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2150,
+		"endLine": 2150,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,bcShifted,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2222,
+		"endLine": 2222,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,bcShifted,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2256,
+		"endLine": 2256,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private unsignedAddOverflowed(a long, b long, sum long) : boolean extracted from private reducePayneHanek(x double, result double[]) : void in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2211,
+		"endLine": 2211,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2246,
+		"endLine": 2246,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2214,
+		"endLine": 2215,
+		"startColumn": 14,
+		"endColumn": 44,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2082,
+		"endLine": 2271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2238,
+		"endLine": 2238,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2213,
+		"endLine": 2213,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2166,
+		"endLine": 2166,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,ac,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2141,
+		"endLine": 2141,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2150,
+		"endLine": 2150,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,bcShifted,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2222,
+		"endLine": 2222,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,bcShifted,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2256,
+		"endLine": 2256,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private unsignedAddOverflowed(a long, b long, sum long) : boolean extracted from private reducePayneHanek(x double, result double[]) : void in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2211,
+		"endLine": 2211,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2268,
+		"endLine": 2268,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2214,
+		"endLine": 2215,
+		"startColumn": 14,
+		"endColumn": 44,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2082,
+		"endLine": 2271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2238,
+		"endLine": 2238,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2213,
+		"endLine": 2213,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2166,
+		"endLine": 2166,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,ac,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2141,
+		"endLine": 2141,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(bd,ad << 32,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2150,
+		"endLine": 2150,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProdB,bcShifted,prodB)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2222,
+		"endLine": 2222,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,bcShifted,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2256,
+		"endLine": 2256,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "unsignedAddOverflowed(prevProd2B,ac,prod2B)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable topSum : boolean in method private unsignedAddOverflowed(a long, b long, sum long) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2124,
+		"endLine": 2124,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bitb : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "topSum : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable topSum : boolean in method private unsignedAddOverflowed(a long, b long, sum long) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2123,
+		"endLine": 2123,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bita : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "topSum : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable bitb : boolean to topSum : boolean in method private unsignedAddOverflowed(a long, b long, sum long) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2124,
+		"endLine": 2124,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bitb : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2124,
+		"endLine": 2124,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "topSum : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable topA : boolean in method private unsignedAddOverflowed(a long, b long, sum long) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bitsum : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2065,
+		"endLine": 2286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private reducePayneHanek(x double, result double[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "topA : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 403,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private unsignedAddOverflowed(a long, b long, sum long) : boolean"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable bita : boolean to topSum : boolean in method private unsignedAddOverflowed(a long, b long, sum long) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2123,
+		"endLine": 2123,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bita : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2123,
+		"endLine": 2123,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "topSum : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable bitsum : boolean to topA : boolean in method private unsignedAddOverflowed(a long, b long, sum long) : boolean from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bitsum : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2211,
+		"endLine": 2211,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2125,
+		"endLine": 2125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "topA : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

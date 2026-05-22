@@ -1,0 +1,13 @@
+agent,class_name,num_iterations,num_tests_run,failure_reason,num_turns,total_cost_usd
+codex,Precision,0,0,Codex CLI not available,,
+codex,FastMath,0,0,Codex CLI not available,,
+codex,MathArrays,0,0,Codex CLI not available,,
+codex,Array2DRowRealMatrix,0,0,Codex CLI not available,,
+codex,DescriptiveStatistics,0,0,Codex CLI not available,,
+codex,SimplexSolver,0,0,Codex CLI not available,,
+claude,Precision,11,30,no changes needed,3.0,0.6583249999999999
+claude,FastMath,20,66,,19.0,2.28741725
+claude,MathArrays,20,64,,14.0,1.4812275
+claude,Array2DRowRealMatrix,7,39,no changes needed,3.0,0.64316575
+claude,DescriptiveStatistics,8,12,no changes needed,6.0,0.81927125
+claude,SimplexSolver,8,29,no changes needed,6.0,0.64009025

@@ -1,0 +1,9 @@
+agent,iter_no,Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+claude,0,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,31,29,426,76,0,3,0.0967741935483871,13,5
+claude,1,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,32,29,425,73,0,3,0.09375,13,5
+claude,2,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,32,29,425,73,0,3,0.09375,13,5
+claude,3,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,36,29,438,69,0,3,0.1388888888888889,13,5
+claude,4,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,36,29,438,69,0,3,0.1388888888888889,13,5
+claude,5,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,37,29,451,70,0,3,0.1351351351351351,13,5
+claude,6,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,39,29,462,70,0,3,0.1282051282051282,13,5
+claude,7,java,org.apache.commons.math3.linear,Array2DRowRealMatrix,2,0,39,29,462,70,0,3,0.1282051282051282,13,5

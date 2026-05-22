@@ -1,0 +1,186 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "96a624dfabda1f64bc1f82ef9a56a008106fc954",
+	"url": "https://github.com/apache/commons-math/commit/96a624dfabda1f64bc1f82ef9a56a008106fc954",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable floatn : double in method public safeNorm(v double[]) : double from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 692,
+		"endLine": 692,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "floatn : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 693,
+		"endLine": 693,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 698,
+		"endLine": 698,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable agiant : double in method public safeNorm(v double[]) : double from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 693,
+		"endLine": 693,
+		"startColumn": 16,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "agiant : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 624,
+		"endLine": 737,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public safeNorm(v double[]) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 698,
+		"endLine": 698,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "agiant : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 632,
+		"endLine": 742,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public safeNorm(v double[]) : double"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute rgiant : double to SAFE_NORM_RGIANT : double in method public safeNorm(v double[]) : double from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 686,
+		"endLine": 686,
+		"startColumn": 16,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rgiant : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 693,
+		"endLine": 693,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 33,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "SAFE_NORM_RGIANT : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 698,
+		"endLine": 698,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute rdwarf : double to SAFE_NORM_RDWARF : double in method public safeNorm(v double[]) : double from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 685,
+		"endLine": 685,
+		"startColumn": 16,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rdwarf : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 697,
+		"endLine": 717,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 696,
+		"endLine": 720,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 33,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "SAFE_NORM_RDWARF : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 702,
+		"endLine": 722,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 701,
+		"endLine": 725,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,246 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "a90a21e0392ec762f1b8f7319799d435ad9bd1f8",
+	"url": "https://github.com/apache/commons-math/commit/a90a21e0392ec762f1b8f7319799d435ad9bd1f8",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private hasBasicArtificialVariable(tableau SimplexTableau, row Integer) : boolean extracted from private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer in class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 316,
+		"endLine": 339,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 331,
+		"endLine": 336,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 333,
+		"endLine": 335,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 331,
+		"endLine": 336,
+		"startColumn": 75,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 338,
+		"endLine": 354,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private hasBasicArtificialVariable(tableau SimplexTableau, row Integer) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 347,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 349,
+		"endLine": 351,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 347,
+		"endLine": 352,
+		"startColumn": 71,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 316,
+		"endLine": 336,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 331,
+		"endLine": 331,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasBasicArtificialVariable(tableau,row)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 349,
+		"endLine": 351,
+		"startColumn": 66,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private notifySolutionCallback(tableau SimplexTableau) : void extracted from public doOptimize() : PointValuePair in class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 443,
+		"endLine": 483,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public doOptimize() : PointValuePair"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 468,
+		"endLine": 470,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 513,
+		"endLine": 523,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private notifySolutionCallback(tableau SimplexTableau) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 521,
+		"endLine": 521,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 520,
+		"endLine": 522,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 458,
+		"endLine": 494,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public doOptimize() : PointValuePair"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 481,
+		"endLine": 481,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "notifySolutionCallback(tableau)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 467,
+		"endLine": 467,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "notifySolutionCallback(null)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 520,
+		"endLine": 522,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

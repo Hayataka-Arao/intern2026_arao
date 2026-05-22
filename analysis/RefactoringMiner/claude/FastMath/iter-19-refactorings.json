@@ -1,0 +1,270 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "c48d81b5990937cdb800e7cbcdcd2714461ae3dd",
+	"url": "https://github.com/apache/commons-math/commit/c48d81b5990937cdb800e7cbcdcd2714461ae3dd",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private subtractFromPiOverTwoSplit(xa double, xb double) : double[] extracted from private cosQ(xa double, xb double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 1993,
+		"endLine": 2006,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private cosQ(xa double, xb double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2001,
+		"endLine": 2001,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2002,
+		"endLine": 2002,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2003,
+		"endLine": 2003,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2005,
+		"endLine": 2005,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 1993,
+		"endLine": 2012,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private subtractFromPiOverTwoSplit(xa double, xb double) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2008,
+		"endLine": 2008,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2009,
+		"endLine": 2009,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2010,
+		"endLine": 2010,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2011,
+		"endLine": 2011,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2014,
+		"endLine": 2024,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private cosQ(xa double, xb double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2022,
+		"endLine": 2022,
+		"startColumn": 42,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "subtractFromPiOverTwoSplit(xa,xb)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private subtractFromPiOverTwoSplit(xa double, xb double) : double[] extracted from public tan(x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2401,
+		"endLine": 2454,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public tan(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2432,
+		"endLine": 2432,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2433,
+		"endLine": 2433,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2434,
+		"endLine": 2434,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 1993,
+		"endLine": 2012,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private subtractFromPiOverTwoSplit(xa double, xb double) : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2008,
+		"endLine": 2008,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2009,
+		"endLine": 2009,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2010,
+		"endLine": 2010,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2419,
+		"endLine": 2472,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public tan(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2450,
+		"endLine": 2450,
+		"startColumn": 46,
+		"endColumn": 80,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "subtractFromPiOverTwoSplit(xa,xb)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2011,
+		"endLine": 2011,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable b : double in method public tan(x double) : double from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2433,
+		"endLine": 2433,
+		"startColumn": 20,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "b : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2401,
+		"endLine": 2454,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tan(x double) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2452,
+		"endLine": 2452,
+		"startColumn": 26,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "b : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2419,
+		"endLine": 2472,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public tan(x double) : double"
+}]
+}
+]
+}]
+}

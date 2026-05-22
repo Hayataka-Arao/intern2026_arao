@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "91fd359d36d100c64322e4974d5f9efe805c98d0",
+	"url": "https://github.com/apache/commons-math/commit/91fd359d36d100c64322e4974d5f9efe805c98d0",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable firstArtificialColumn : int in method private hasBasicArtificialVariable(tableau SimplexTableau, row Integer) : boolean from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 19,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "firstArtificialColumn : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable column : int to endArtificialColumn : int in method private hasBasicArtificialVariable(tableau SimplexTableau, row Integer) : boolean from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 23,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "column : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 19,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "endArtificialColumn : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

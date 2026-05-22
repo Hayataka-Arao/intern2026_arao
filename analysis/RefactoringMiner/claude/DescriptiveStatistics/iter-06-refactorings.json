@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "791e3166dc27682473228f3b7958de826e8bb954",
+	"url": "https://github.com/apache/commons-math/commit/791e3166dc27682473228f3b7958de826e8bb954",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private setPercentileQuantile(p double) : void extracted from public getPercentile(p double) : double in class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 430,
+		"endLine": 456,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPercentile(p double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 450,
+		"endLine": 454,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 450,
+		"endLine": 452,
+		"startColumn": 51,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 452,
+		"endLine": 454,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 454,
+		"endLine": 473,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private setPercentileQuantile(p double) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 471,
+		"endLine": 471,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 468,
+		"endLine": 472,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 468,
+		"endLine": 470,
+		"startColumn": 51,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 470,
+		"endLine": 472,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 430,
+		"endLine": 452,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPercentile(p double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setPercentileQuantile(p)"
+}]
+}
+]
+}]
+}

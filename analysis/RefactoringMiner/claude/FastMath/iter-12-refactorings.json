@@ -1,0 +1,537 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "bf92fe07fa731d4bddf45e4c0d0e3c12ff8f6efe",
+	"url": "https://github.com/apache/commons-math/commit/bf92fe07fa731d4bddf45e4c0d0e3c12ff8f6efe",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private sinByQuadrant(xa double, xb double, quadrant int) : double extracted from public sin(x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2304,
+		"endLine": 2353,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public sin(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2342,
+		"endLine": 2342,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2343,
+		"endLine": 2343,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2344,
+		"endLine": 2344,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2345,
+		"endLine": 2345,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2346,
+		"endLine": 2346,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2347,
+		"endLine": 2347,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2348,
+		"endLine": 2348,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2349,
+		"endLine": 2349,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2350,
+		"endLine": 2350,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2351,
+		"endLine": 2351,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2341,
+		"endLine": 2352,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2313,
+		"endLine": 2335,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private sinByQuadrant(xa double, xb double, quadrant int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2324,
+		"endLine": 2324,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2325,
+		"endLine": 2325,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2326,
+		"endLine": 2326,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2327,
+		"endLine": 2327,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2328,
+		"endLine": 2328,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2329,
+		"endLine": 2329,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2330,
+		"endLine": 2330,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2331,
+		"endLine": 2331,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2332,
+		"endLine": 2332,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2333,
+		"endLine": 2333,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2323,
+		"endLine": 2334,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2337,
+		"endLine": 2375,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public sin(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2374,
+		"endLine": 2374,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "sinByQuadrant(xa,xb,quadrant)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private sinByQuadrant(xa double, xb double, quadrant int) : double extracted from public cos(x double) : double in class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2355,
+		"endLine": 2397,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public cos(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2386,
+		"endLine": 2386,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2387,
+		"endLine": 2387,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2388,
+		"endLine": 2388,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2389,
+		"endLine": 2389,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2390,
+		"endLine": 2390,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2391,
+		"endLine": 2391,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2392,
+		"endLine": 2392,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2393,
+		"endLine": 2393,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2394,
+		"endLine": 2394,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2395,
+		"endLine": 2395,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2385,
+		"endLine": 2396,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2313,
+		"endLine": 2335,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private sinByQuadrant(xa double, xb double, quadrant int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2324,
+		"endLine": 2324,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2327,
+		"endLine": 2327,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2326,
+		"endLine": 2326,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2329,
+		"endLine": 2329,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2328,
+		"endLine": 2328,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2331,
+		"endLine": 2331,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2330,
+		"endLine": 2330,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2325,
+		"endLine": 2325,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2332,
+		"endLine": 2332,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2333,
+		"endLine": 2333,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2323,
+		"endLine": 2334,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2377,
+		"endLine": 2406,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public cos(x double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2405,
+		"endLine": 2405,
+		"startColumn": 16,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "sinByQuadrant(xa,xb,quadrant + 1)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable c : long in method private reducePayneHanek(x double, result double[]) : void from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2219,
+		"endLine": 2219,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "c : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2234,
+		"endLine": 2234,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable d : long in method private reducePayneHanek(x double, result double[]) : void from class org.apache.commons.math3.util.FastMath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2220,
+		"endLine": 2220,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "d : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+		"startLine": 2234,
+		"endLine": 2234,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

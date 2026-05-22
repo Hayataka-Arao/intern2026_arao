@@ -1,0 +1,87 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "4571a4820d9c141b60499b917c9553ebb1fe193d",
+	"url": "https://github.com/apache/commons-math/commit/4571a4820d9c141b60499b917c9553ebb1fe193d",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private violatesOrder(previous T, current T, increasing boolean, strict boolean) : boolean extracted from public isMonotonic(val T[], dir OrderDirection, strict boolean) : boolean in class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 333,
+		"endLine": 362,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public isMonotonic(val T[], dir OrderDirection, strict boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 351,
+		"endLine": 353,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 359,
+		"endLine": 377,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private violatesOrder(previous T, current T, increasing boolean, strict boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 373,
+		"endLine": 375,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 333,
+		"endLine": 357,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public isMonotonic(val T[], dir OrderDirection, strict boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 17,
+		"endColumn": 69,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "violatesOrder(previous,current,increasing,strict)"
+}]
+}
+]
+}]
+}

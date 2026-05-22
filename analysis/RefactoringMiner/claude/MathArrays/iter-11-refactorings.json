@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "b045cf8c051ef6f2659020fb3e76a727285e76b6",
+	"url": "https://github.com/apache/commons-math/commit/b045cf8c051ef6f2659020fb3e76a727285e76b6",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable curLength : int in method public concatenate(x double[]...) : double[] from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1955,
+		"endLine": 1955,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "curLength : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1956,
+		"endLine": 1956,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1957,
+		"endLine": 1957,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1955,
+		"endLine": 1955,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1956,
+		"endLine": 1956,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

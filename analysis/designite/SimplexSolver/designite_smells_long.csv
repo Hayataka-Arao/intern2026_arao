@@ -1,0 +1,9 @@
+iter_no,project_name,package_name,type_name,code_smell
+0,java,org.apache.commons.math3.optimization.linear,SimplexSolver,Unutilized Abstraction
+0,java,org.apache.commons.math3.optim.linear,SimplexSolver,Unutilized Abstraction
+1,java,org.apache.commons.math3.optimization.linear,SimplexSolver,Unutilized Abstraction
+1,java,org.apache.commons.math3.optim.linear,SimplexSolver,Unutilized Abstraction
+2,java,org.apache.commons.math3.optimization.linear,SimplexSolver,Unutilized Abstraction
+2,java,org.apache.commons.math3.optim.linear,SimplexSolver,Unutilized Abstraction
+3,java,org.apache.commons.math3.optimization.linear,SimplexSolver,Unutilized Abstraction
+3,java,org.apache.commons.math3.optim.linear,SimplexSolver,Unutilized Abstraction

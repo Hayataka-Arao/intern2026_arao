@@ -1,0 +1,5 @@
+iter_no,Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+0,java,org.apache.commons.math3.optimization.linear,SimplexSolver,4,0,7,3,166,30,0,2,0.2857142857142857,0,0
+1,java,org.apache.commons.math3.optimization.linear,SimplexSolver,4,0,7,3,166,30,0,2,0.2857142857142857,0,0
+2,java,org.apache.commons.math3.optimization.linear,SimplexSolver,4,0,7,3,166,30,0,2,0.2857142857142857,0,0
+3,java,org.apache.commons.math3.optimization.linear,SimplexSolver,4,0,7,3,166,30,0,2,0.2857142857142857,0,0

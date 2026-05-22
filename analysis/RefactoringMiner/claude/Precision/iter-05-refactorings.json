@@ -1,0 +1,381 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "8cf4a1c917b79f308c51578be30608e488d2d517",
+	"url": "https://github.com/apache/commons-math/commit/8cf4a1c917b79f308c51578be30608e488d2d517",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private roundHalfEven(value double) : double extracted from private roundUnscaled(unscaled double, sign double, roundingMethod int) : double in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 489,
+		"endLine": 564,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 521,
+		"endLine": 521,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 528,
+		"endLine": 528,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 523,
+		"endLine": 523,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 525,
+		"endLine": 525,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 530,
+		"endLine": 530,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 532,
+		"endLine": 532,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 529,
+		"endLine": 533,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 524,
+		"endLine": 534,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 522,
+		"endLine": 534,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 529,
+		"endLine": 531,
+		"startColumn": 65,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 524,
+		"endLine": 526,
+		"startColumn": 40,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 522,
+		"endLine": 524,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 576,
+		"endLine": 599,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private roundHalfEven(value double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 584,
+		"endLine": 584,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 594,
+		"endLine": 594,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 596,
+		"endLine": 596,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 598,
+		"endLine": 598,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 595,
+		"endLine": 597,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 589,
+		"endLine": 591,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 595,
+		"endLine": 597,
+		"startColumn": 57,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 589,
+		"endLine": 591,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 586,
+		"endLine": 588,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 489,
+		"endLine": 549,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "roundHalfEven(unscaled)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter unscaled : double to value : double in method private roundHalfEven(value double) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 502,
+		"endLine": 502,
+		"startColumn": 41,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "unscaled : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 521,
+		"endLine": 521,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 523,
+		"endLine": 523,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 532,
+		"endLine": 532,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 583,
+		"endLine": 583,
+		"startColumn": 41,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 584,
+		"endLine": 584,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 598,
+		"endLine": 598,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

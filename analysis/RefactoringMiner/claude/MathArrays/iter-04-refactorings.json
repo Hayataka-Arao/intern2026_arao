@@ -1,0 +1,765 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "72ea79a638f42de4e5c711f37b65c401cdb4cb01",
+	"url": "https://github.com/apache/commons-math/commit/72ea79a638f42de4e5c711f37b65c401cdb4cb01",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private checkEqualLength(lenA int, lenB int, abort boolean) : boolean extracted from public checkEqualLength(a double[], b double[], abort boolean) : boolean in class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 374,
+		"endLine": 396,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public checkEqualLength(a double[], b double[], abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 391,
+		"endLine": 393,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 388,
+		"endLine": 395,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 391,
+		"endLine": 393,
+		"startColumn": 24,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 388,
+		"endLine": 390,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 435,
+		"endLine": 453,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkEqualLength(lenA int, lenB int, abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 449,
+		"endLine": 451,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 446,
+		"endLine": 448,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 449,
+		"endLine": 451,
+		"startColumn": 20,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 446,
+		"endLine": 448,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 374,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public checkEqualLength(a double[], b double[], abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 16,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "checkEqualLength(a.length,b.length,abort)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private checkEqualLength(lenA int, lenB int, abort boolean) : boolean extracted from public checkEqualLength(a int[], b int[], abort boolean) : boolean in class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 412,
+		"endLine": 434,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public checkEqualLength(a int[], b int[], abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 430,
+		"endLine": 430,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 429,
+		"endLine": 431,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 426,
+		"endLine": 433,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 429,
+		"endLine": 431,
+		"startColumn": 24,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 426,
+		"endLine": 428,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 435,
+		"endLine": 453,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkEqualLength(lenA int, lenB int, abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 449,
+		"endLine": 451,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 446,
+		"endLine": 448,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 449,
+		"endLine": 451,
+		"startColumn": 20,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 446,
+		"endLine": 448,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 405,
+		"endLine": 420,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public checkEqualLength(a int[], b int[], abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 16,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "checkEqualLength(a.length,b.length,abort)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private swap(list int[], i int, j int) : void extracted from public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void in class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1569,
+		"endLine": 1621,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1598,
+		"endLine": 1598,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1599,
+		"endLine": 1599,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1592,
+		"endLine": 1592,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1617,
+		"endLine": 1628,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private swap(list int[], i int, j int) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1625,
+		"endLine": 1625,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1626,
+		"endLine": 1626,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1627,
+		"endLine": 1627,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1575,
+		"endLine": 1615,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1600,
+		"endLine": 1600,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "swap(list,i,target)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1609,
+		"endLine": 1609,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "swap(list,i,target)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private swap(list int[], i int, j int) : void extracted from public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void in class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1569,
+		"endLine": 1621,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1613,
+		"endLine": 1613,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1614,
+		"endLine": 1614,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1607,
+		"endLine": 1607,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1617,
+		"endLine": 1628,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private swap(list int[], i int, j int) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1625,
+		"endLine": 1625,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1626,
+		"endLine": 1626,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1627,
+		"endLine": 1627,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1575,
+		"endLine": 1615,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1600,
+		"endLine": 1600,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "swap(list,i,target)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1609,
+		"endLine": 1609,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "swap(list,i,target)"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable target : int in method public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1590,
+		"endLine": 1590,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1569,
+		"endLine": 1621,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1624,
+		"endLine": 1624,
+		"startColumn": 49,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "j : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1617,
+		"endLine": 1628,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "private swap(list int[], i int, j int) : void"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable target : int in method public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1605,
+		"endLine": 1605,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1569,
+		"endLine": 1621,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public shuffle(list int[], start int, pos Position, rng RandomGenerator) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1624,
+		"endLine": 1624,
+		"startColumn": 49,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "j : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1617,
+		"endLine": 1628,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "private swap(list int[], i int, j int) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable target : int to j : int in method private swap(list int[], i int, j int) : void from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1590,
+		"endLine": 1590,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1592,
+		"endLine": 1592,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1624,
+		"endLine": 1624,
+		"startColumn": 49,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "j : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1627,
+		"endLine": 1627,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable target : int to j : int in method private swap(list int[], i int, j int) : void from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1605,
+		"endLine": 1605,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "target : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1607,
+		"endLine": 1607,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1624,
+		"endLine": 1624,
+		"startColumn": 49,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "j : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1627,
+		"endLine": 1627,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable curLength : int in method public concatenate(x double[]...) : double[] from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1873,
+		"endLine": 1873,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "curLength : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1856,
+		"endLine": 1881,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public concatenate(x double[]...) : double[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1882,
+		"endLine": 1882,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "curLength : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 1863,
+		"endLine": 1887,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public concatenate(x double[]...) : double[]"
+}]
+}
+]
+}]
+}

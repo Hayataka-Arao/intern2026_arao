@@ -1,0 +1,144 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "ddf8309c952efbb7c5ede4b1a36e56fc0bca5777",
+	"url": "https://github.com/apache/commons-math/commit/ddf8309c952efbb7c5ede4b1a36e56fc0bca5777",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable n : long in method public addValue(v double) : void from class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 169,
+		"endLine": 171,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "n : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 177,
+		"endLine": 179,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 175,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(windowSize == INFINITE_WINDOW || getN() < windowSize) to [if(windowSize == INFINITE_WINDOW), if(n < windowSize)] in method public addValue(v double) : void from class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(windowSize == INFINITE_WINDOW || getN() < windowSize)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 158,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addValue(v double) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 170,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(windowSize == INFINITE_WINDOW)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 175,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(n < windowSize)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 161,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public addValue(v double) : void"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private PROBE_QUANTILE : double in class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 569,
+		"endLine": 569,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 33,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private PROBE_QUANTILE : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 577,
+		"endLine": 577,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+}
+]
+}]
+}

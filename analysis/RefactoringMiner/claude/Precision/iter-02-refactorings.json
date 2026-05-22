@@ -1,0 +1,2511 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "f18c2b1096a80001d8d452b9f48d1b3cc99e89c3",
+	"url": "https://github.com/apache/commons-math/commit/f18c2b1096a80001d8d452b9f48d1b3cc99e89c3",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean extracted from public equals(x float, y float, maxUlps int) : boolean in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 196,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public equals(x float, y float, maxUlps int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 235,
+		"endLine": 239,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 227,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 235,
+		"endLine": 237,
+		"startColumn": 38,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 227,
+		"endLine": 230,
+		"startColumn": 30,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 230,
+		"endLine": 233,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 223,
+		"startColumn": 52,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 349,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 388,
+		"endLine": 390,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 388,
+		"endLine": 390,
+		"startColumn": 34,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 384,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 384,
+		"endLine": 387,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 192,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public equals(x float, y float, maxUlps int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 213,
+		"endLine": 217,
+		"startColumn": 33,
+		"endColumn": 60,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "equalsByUlpDistance(xBits,yBits,SGN_MASK_FLOAT,POSITIVE_ZERO_FLOAT_BITS,NEGATIVE_ZERO_FLOAT_BITS,maxUlps)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean extracted from public equals(x double, y double, maxUlps int) : boolean in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 343,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public equals(x double, y double, maxUlps int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 389,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 377,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 38,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 377,
+		"endLine": 380,
+		"startColumn": 30,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 380,
+		"endLine": 383,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 373,
+		"startColumn": 47,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 349,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 388,
+		"endLine": 390,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 388,
+		"endLine": 390,
+		"startColumn": 34,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 384,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 384,
+		"endLine": 387,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 317,
+		"endLine": 347,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public equals(x double, y double, maxUlps int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 341,
+		"endLine": 345,
+		"startColumn": 33,
+		"endColumn": 60,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "equalsByUlpDistance(xBits,yBits,SGN_MASK,POSITIVE_ZERO_DOUBLE_BITS,NEGATIVE_ZERO_DOUBLE_BITS,maxUlps)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private floorTowardNegative(value double) : double extracted from private roundUnscaled(unscaled double, sign double, roundingMethod int) : double in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 492,
+		"endLine": 587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 13,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 579,
+		"endLine": 589,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private floorTowardNegative(value double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 588,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 489,
+		"endLine": 576,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 508,
+		"endLine": 508,
+		"startColumn": 39,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "floorTowardNegative(unscaled)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 511,
+		"endLine": 511,
+		"startColumn": 24,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "floorTowardNegative(unscaled)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 514,
+		"endLine": 514,
+		"startColumn": 70,
+		"endColumn": 99,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "floorTowardNegative(unscaled)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private ceilTowardPositive(value double) : double extracted from private roundUnscaled(unscaled double, sign double, roundingMethod int) : double in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 492,
+		"endLine": 587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 17,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 591,
+		"endLine": 601,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private ceilTowardPositive(value double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 600,
+		"endLine": 600,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 489,
+		"endLine": 576,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 508,
+		"endLine": 508,
+		"startColumn": 71,
+		"endColumn": 99,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ceilTowardPositive(unscaled)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 514,
+		"endLine": 514,
+		"startColumn": 39,
+		"endColumn": 67,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ceilTowardPositive(unscaled)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 560,
+		"endLine": 560,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "ceilTowardPositive(unscaled)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type xInt : int to xBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "xInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 227,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "xBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type yInt : int to yBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "yInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 227,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "yBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deltaPlus : int to deltaPlus : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deltaPlus : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 235,
+		"endLine": 239,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "deltaPlus : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 388,
+		"endLine": 390,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deltaMinus : int to deltaMinus : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 23,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deltaMinus : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "deltaMinus : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable xInt : int to xBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "xInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 227,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "xBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable yInt : int to yBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "yInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 227,
+		"endLine": 233,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "yBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable xInt : long to xBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "xInt : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 377,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "xBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable yInt : long to yBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "yInt : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 377,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 48,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "yBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter unscaled : double to value : double in method private floorTowardNegative(value double) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 505,
+		"endLine": 505,
+		"startColumn": 41,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "unscaled : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 13,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 47,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 588,
+		"endLine": 588,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter unscaled : double to value : double in method private ceilTowardPositive(value double) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 505,
+		"endLine": 505,
+		"startColumn": 41,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "unscaled : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 17,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 46,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 600,
+		"endLine": 600,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return 1;, if(x < y)] to return x < y ? -1 : 1; in method public compareTo(x double, y double, eps double) : int from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return 1;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 108,
+		"endLine": 110,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(x < y)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 94,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public compareTo(x double, y double, eps double) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return x < y ? -1 : 1;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 94,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public compareTo(x double, y double, eps double) : int"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(x < y) to return x < y ? -1 : 1; in method public compareTo(x double, y double, eps double) : int from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 108,
+		"endLine": 110,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(x < y)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 94,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public compareTo(x double, y double, eps double) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return x < y ? -1 : 1;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 94,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "public compareTo(x double, y double, eps double) : int"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return 1;, if(x < y)] to return x < y ? -1 : 1; in method public compareTo(x double, y double, maxUlps int) : int from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return 1;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 135,
+		"endLine": 137,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(x < y)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 114,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public compareTo(x double, y double, maxUlps int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return x < y ? -1 : 1;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 112,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public compareTo(x double, y double, maxUlps int) : int"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(x < y) to return x < y ? -1 : 1; in method public compareTo(x double, y double, maxUlps int) : int from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 135,
+		"endLine": 137,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(x < y)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 114,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public compareTo(x double, y double, maxUlps int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return x < y ? -1 : 1;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 112,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "public compareTo(x double, y double, maxUlps int) : int"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type xInt : int to xBits : long in method public equals(x float, y float, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "xInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 20,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "xBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type yInt : int to yBits : long in method public equals(x float, y float, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "yInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 20,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "yBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable xInt : int to xBits : long in method public equals(x float, y float, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "xInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 20,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "xBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable yInt : int to yBits : long in method public equals(x float, y float, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 19,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "yInt : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 20,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "yBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable xInt : long to xBits : long in method public equals(x double, y double, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "xInt : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 20,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "xBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable yInt : long to yBits : long in method public equals(x double, y double, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "yInt : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 20,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "yBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute POSITIVE_ZERO_FLOAT_BITS : int to positiveZeroBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 30,
+		"endColumn": 89,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "POSITIVE_ZERO_FLOAT_BITS : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 48,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "positiveZeroBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute NEGATIVE_ZERO_FLOAT_BITS : int to negativeZeroBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 30,
+		"endColumn": 89,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "NEGATIVE_ZERO_FLOAT_BITS : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 48,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "negativeZeroBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute SGN_MASK_FLOAT : int to signMask : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "SGN_MASK_FLOAT : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 220,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 48,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "signMask : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute POSITIVE_ZERO_DOUBLE_BITS : long to positiveZeroBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 31,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "POSITIVE_ZERO_DOUBLE_BITS : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 48,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "positiveZeroBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute NEGATIVE_ZERO_DOUBLE_BITS : long to negativeZeroBits : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 31,
+		"endColumn": 91,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "NEGATIVE_ZERO_DOUBLE_BITS : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 48,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "negativeZeroBits : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute SGN_MASK : long to signMask : long in method private equalsByUlpDistance(xBits long, yBits long, signMask long, positiveZeroBits long, negativeZeroBits long, maxUlps int) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "SGN_MASK : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 48,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "signMask : long"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 374,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

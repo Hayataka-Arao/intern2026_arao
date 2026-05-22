@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "868f2262fadb67b4e05cabfe0c99c2c71175e18b",
+	"url": "https://github.com/apache/commons-math/commit/868f2262fadb67b4e05cabfe0c99c2c71175e18b",
+	"refactorings": [{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable newArr : double[] in method public scale(val double, arr double[]) : double[] from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newArr : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 89,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public scale(val double, arr double[]) : double[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 24,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "newArr : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 89,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public scale(val double, arr double[]) : double[]"
+}]
+}
+]
+}]
+}

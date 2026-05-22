@@ -1,0 +1,22 @@
+agent,iter_no,Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+claude,0,java,org.apache.commons.math3.util,FastMath,62,5,100,80,3006,369,0,0,0.38,253,8
+claude,1,java,org.apache.commons.math3.util,FastMath,64,5,103,80,2991,370,0,0,0.3689320388349514,253,8
+claude,2,java,org.apache.commons.math3.util,FastMath,64,5,104,80,2983,368,0,0,0.3653846153846153,253,8
+claude,3,java,org.apache.commons.math3.util,FastMath,64,5,105,80,2981,367,0,0,0.3619047619047619,253,8
+claude,4,java,org.apache.commons.math3.util,FastMath,64,5,106,80,2981,368,0,0,0.3396226415094339,253,8
+claude,5,java,org.apache.commons.math3.util,FastMath,64,5,107,80,2980,369,0,0,0.3364485981308411,253,8
+claude,6,java,org.apache.commons.math3.util,FastMath,64,5,110,80,2991,371,0,0,0.3272727272727272,253,8
+claude,7,java,org.apache.commons.math3.util,FastMath,64,5,111,80,2999,374,0,0,0.3243243243243243,253,8
+claude,8,java,org.apache.commons.math3.util,FastMath,64,5,111,80,2996,373,0,0,0.3243243243243243,253,8
+claude,9,java,org.apache.commons.math3.util,FastMath,65,5,112,80,3006,375,0,0,0.3214285714285714,253,8
+claude,10,java,org.apache.commons.math3.util,FastMath,65,5,114,80,2990,373,0,0,0.3157894736842105,253,8
+claude,11,java,org.apache.commons.math3.util,FastMath,65,5,115,80,2991,373,0,0,0.3130434782608696,253,8
+claude,12,java,org.apache.commons.math3.util,FastMath,65,5,117,80,2994,371,0,0,0.3076923076923077,253,8
+claude,13,java,org.apache.commons.math3.util,FastMath,65,5,119,80,2986,365,0,0,0.3025210084033613,253,8
+claude,14,java,org.apache.commons.math3.util,FastMath,65,5,120,80,2964,355,0,0,0.3,253,8
+claude,15,java,org.apache.commons.math3.util,FastMath,65,5,121,80,2967,356,0,0,0.2975206611570248,253,8
+claude,16,java,org.apache.commons.math3.util,FastMath,65,5,123,80,2983,358,0,0,0.2926829268292683,253,8
+claude,17,java,org.apache.commons.math3.util,FastMath,65,5,124,80,2997,359,0,0,0.2903225806451613,253,8
+claude,18,java,org.apache.commons.math3.util,FastMath,65,5,125,80,2990,360,0,0,0.288,253,8
+claude,19,java,org.apache.commons.math3.util,FastMath,65,5,126,80,3000,361,0,0,0.2857142857142857,253,8
+claude,20,java,org.apache.commons.math3.util,FastMath,65,5,126,80,3000,361,0,0,0.2857142857142857,253,8

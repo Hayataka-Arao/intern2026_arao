@@ -1,0 +1,10 @@
+agent,iter_no,Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+claude,0,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,12,6,246,42,0,4,0.1666666666666666,1,4
+claude,1,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,17,6,293,47,0,4,0.1176470588235294,1,4
+claude,2,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,18,6,299,48,0,4,0.1111111111111111,1,4
+claude,3,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,19,6,310,49,0,4,0.1052631578947368,1,4
+claude,4,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,21,6,327,51,0,4,0.0952380952380952,1,4
+claude,5,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,21,6,329,51,0,4,0.0952380952380952,1,4
+claude,6,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,21,6,329,51,0,4,0.0952380952380952,2,5
+claude,7,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,21,6,330,51,0,4,0.0952380952380952,2,5
+claude,8,java,org.apache.commons.math3.optim.linear,SimplexSolver,8,0,21,6,330,51,0,4,0.0952380952380952,2,5

@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "c3a2e515e9064cee025e864b09438e914553edd9",
+	"url": "https://github.com/apache/commons-math/commit/c3a2e515e9064cee025e864b09438e914553edd9",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable currentSize : int in method public setWindowSize(windowSize int) : void from class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 375,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 23,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "currentSize : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 380,
+		"endLine": 382,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

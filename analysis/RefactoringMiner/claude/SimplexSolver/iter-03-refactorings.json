@@ -1,0 +1,120 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "e2dbbed388f775317288fd3086cebc2bf55f5f89",
+	"url": "https://github.com/apache/commons-math/commit/e2dbbed388f775317288fd3086cebc2bf55f5f89",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private isBasicArtificialVariable(tableau SimplexTableau, row Integer, column int) : boolean extracted from private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer in class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 315,
+		"endLine": 339,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 21,
+		"endColumn": 100,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 341,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isBasicArtificialVariable(tableau SimplexTableau, row Integer, column int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 316,
+		"endLine": 339,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isBasicArtificialVariable(tableau,row,column)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable useBlandsRule : boolean in method private getPivotColumn(tableau SimplexTableau) : Integer from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 204,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 23,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "useBlandsRule : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 205,
+		"endLine": 207,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

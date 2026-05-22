@@ -1,0 +1,411 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "e48f0ed5db71c3ddec05b08232d49caf4a684960",
+	"url": "https://github.com/apache/commons-math/commit/e48f0ed5db71c3ddec05b08232d49caf4a684960",
+	"refactorings": [{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable data : OptimizationData in method protected parseOptimizationData(optData OptimizationData...) : void from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 14,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : OptimizationData"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 157,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected parseOptimizationData(optData OptimizationData...) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "data : OptimizationData"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 157,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected parseOptimizationData(optData OptimizationData...) : void"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter tableau : SimplexTableau in method private getPivotColumn(tableau SimplexTableau) : Integer from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tableau : SimplexTableau"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 186,
+		"endLine": 212,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getPivotColumn(tableau SimplexTableau) : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 36,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "tableau : SimplexTableau"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 186,
+		"endLine": 212,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private getPivotColumn(tableau SimplexTableau) : Integer"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter tableau : SimplexTableau in method private isValidPivotColumn(tableau SimplexTableau, col int) : boolean from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 40,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tableau : SimplexTableau"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 214,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isValidPivotColumn(tableau SimplexTableau, col int) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 40,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "tableau : SimplexTableau"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 214,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private isValidPivotColumn(tableau SimplexTableau, col int) : boolean"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter col : int in method private isValidPivotColumn(tableau SimplexTableau, col int) : boolean from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 64,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "col : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 214,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isValidPivotColumn(tableau SimplexTableau, col int) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 70,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "col : int"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 214,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private isValidPivotColumn(tableau SimplexTableau, col int) : boolean"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter tableau : SimplexTableau in method private getPivotRow(tableau SimplexTableau, col int) : Integer from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 33,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tableau : SimplexTableau"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 249,
+		"endLine": 281,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getPivotRow(tableau SimplexTableau, col int) : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 33,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "tableau : SimplexTableau"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 249,
+		"endLine": 281,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private getPivotRow(tableau SimplexTableau, col int) : Integer"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable row : Integer in method private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "row : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 318,
+		"endLine": 338,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "row : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 318,
+		"endLine": 338,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private findArtificialVariableRow(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable row : Integer in method private selectRowByBlandsRule(tableau SimplexTableau, candidateRows List<Integer>) : Integer from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "row : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 375,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private selectRowByBlandsRule(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 14,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "row : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 375,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private selectRowByBlandsRule(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private selectRowByBlandsRule(tableau SimplexTableau, candidateRows List<Integer>) : Integer from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 375,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private selectRowByBlandsRule(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 375,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private selectRowByBlandsRule(tableau SimplexTableau, candidateRows List<Integer>) : Integer"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable pivotCol : Integer in method protected doIteration(tableau SimplexTableau) : void from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "pivotCol : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 397,
+		"endLine": 417,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected doIteration(tableau SimplexTableau) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 23,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "pivotCol : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 397,
+		"endLine": 417,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected doIteration(tableau SimplexTableau) : void"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable pivotRow : Integer in method protected doIteration(tableau SimplexTableau) : void from class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "pivotRow : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 397,
+		"endLine": 417,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected doIteration(tableau SimplexTableau) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 23,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "pivotRow : Integer"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 397,
+		"endLine": 417,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected doIteration(tableau SimplexTableau) : void"
+}]
+}
+]
+}]
+}

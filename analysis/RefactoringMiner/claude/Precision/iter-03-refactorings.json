@@ -1,0 +1,237 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "ec1d6c7140eddd98d4d6ec9009d67c9bc47fa41a",
+	"url": "https://github.com/apache/commons-math/commit/ec1d6c7140eddd98d4d6ec9009d67c9bc47fa41a",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable floored : double in method private roundUnscaled(unscaled double, sign double, roundingMethod int) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 527,
+		"endLine": 527,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 522,
+		"endLine": 522,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 534,
+		"endLine": 538,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 523,
+		"endLine": 523,
+		"startColumn": 26,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "floored : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 524,
+		"endLine": 524,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 528,
+		"endLine": 528,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 533,
+		"endLine": 533,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 532,
+		"endLine": 536,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable floored : double in method private roundUnscaled(unscaled double, sign double, roundingMethod int) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 522,
+		"endLine": 522,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 26,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "floored : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 519,
+		"endLine": 519,
+		"startColumn": 13,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable floored : double in method private roundUnscaled(unscaled double, sign double, roundingMethod int) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 522,
+		"endLine": 522,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 542,
+		"endLine": 542,
+		"startColumn": 26,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "floored : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 543,
+		"endLine": 543,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable halfFloored : double in method private roundUnscaled(unscaled double, sign double, roundingMethod int) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 534,
+		"endLine": 538,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 531,
+		"endLine": 531,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "halfFloored : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 532,
+		"endLine": 536,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable fraction : double in method private roundUnscaled(unscaled double, sign double, roundingMethod int) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 527,
+		"endLine": 527,
+		"startColumn": 20,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fraction : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 489,
+		"endLine": 576,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 524,
+		"endLine": 524,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "fraction : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 489,
+		"endLine": 570,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}]
+}
+]
+}]
+}

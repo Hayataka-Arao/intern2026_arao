@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "d67a8b7488fc08740b0da093802ad157ecf205b5",
+	"url": "https://github.com/apache/commons-math/commit/d67a8b7488fc08740b0da093802ad157ecf205b5",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private isAboveCutOff(entry double) : boolean extracted from private isValidPivotColumn(tableau SimplexTableau, col int) : boolean in class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 215,
+		"endLine": 237,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private isValidPivotColumn(tableau SimplexTableau, col int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 235,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isAboveCutOff(entry double) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 212,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private isValidPivotColumn(tableau SimplexTableau, col int) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isAboveCutOff(entry)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private isAboveCutOff(entry double) : boolean extracted from private findMinRatioRows(tableau SimplexTableau, col int) : List<Integer> in class org.apache.commons.math3.optim.linear.SimplexSolver",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 273,
+		"endLine": 305,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private findMinRatioRows(tableau SimplexTableau, col int) : List<Integer>"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 235,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isAboveCutOff(entry double) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 281,
+		"endLine": 313,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private findMinRatioRows(tableau SimplexTableau, col int) : List<Integer>"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/optim/linear/SimplexSolver.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isAboveCutOff(entry)"
+}]
+}
+]
+}]
+}

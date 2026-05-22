@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "a17982f44c2e5bbd86516f52945c95ad86320f39",
+	"url": "https://github.com/apache/commons-math/commit/a17982f44c2e5bbd86516f52945c95ad86320f39",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private invalidRoundingMethodException(roundingMethod int) : MathIllegalArgumentException extracted from private roundUnscaled(unscaled double, sign double, roundingMethod int) : double in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 457,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 505,
+		"endLine": 514,
+		"startColumn": 13,
+		"endColumn": 85,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 510,
+		"endLine": 529,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private invalidRoundingMethodException(roundingMethod int) : MathIllegalArgumentException"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 519,
+		"endLine": 528,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 457,
+		"endLine": 508,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 505,
+		"endLine": 505,
+		"startColumn": 19,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "invalidRoundingMethodException(roundingMethod)"
+}]
+}
+]
+}]
+}

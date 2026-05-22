@@ -1,0 +1,807 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "3565775b2d2dd4187b23b2cf4033922ffe97d50a",
+	"url": "https://github.com/apache/commons-math/commit/3565775b2d2dd4187b23b2cf4033922ffe97d50a",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean extracted from public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean in class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 498,
+		"endLine": 498,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 500,
+		"endLine": 500,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 475,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 477,
+		"endLine": 477,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 477,
+		"endLine": 477,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 498,
+		"endLine": 498,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 500,
+		"endLine": 500,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 502,
+		"endLine": 502,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 504,
+		"endLine": 504,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 497,
+		"endLine": 505,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "SIMPLE_NAME",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 483,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "violatesOrder(previous,current,dir,strict)"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(val[index] <= previous) to return strict ? current <= previous : current < previous; in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 478,
+		"endLine": 480,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(val[index] <= previous)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return strict ? current <= previous : current < previous;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(val[index] < previous) to return strict ? current <= previous : current < previous; in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 482,
+		"endLine": 484,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(val[index] < previous)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return strict ? current <= previous : current < previous;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(strict) to return strict ? current <= previous : current < previous; in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 477,
+		"endLine": 485,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(strict)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return strict ? current <= previous : current < previous;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(strict) to return strict ? current <= previous : current < previous; in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 488,
+		"endLine": 496,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(strict)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return strict ? current <= previous : current < previous;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(val[index] >= previous) to return strict ? current >= previous : current > previous; in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 489,
+		"endLine": 491,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(val[index] >= previous)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return strict ? current >= previous : current > previous;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(val[index] > previous) to return strict ? current >= previous : current > previous; in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 493,
+		"endLine": 495,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(val[index] > previous)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 455,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return strict ? current >= previous : current > previous;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 485,
+		"endLine": 506,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type val : double[] to current : double in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 466,
+		"endLine": 466,
+		"startColumn": 38,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "val : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 495,
+		"endLine": 495,
+		"startColumn": 59,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "current : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter val : double[] to current : double in method private violatesOrder(previous double, current double, dir OrderDirection, strict boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 466,
+		"endLine": 466,
+		"startColumn": 38,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "val : double[]"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 495,
+		"endLine": 495,
+		"startColumn": 59,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "current : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable current : double in method public checkOrder(val double[], dir OrderDirection, strict boolean, abort boolean) : boolean from class org.apache.commons.math3.util.MathArrays",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 503,
+		"endLine": 503,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 13,
+		"endColumn": 95,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 482,
+		"endLine": 482,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 478,
+		"endLine": 478,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 473,
+		"endLine": 473,
+		"startColumn": 26,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "current : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 480,
+		"endLine": 480,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 21,
+		"endColumn": 100,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/MathArrays.java",
+		"startLine": 501,
+		"endLine": 501,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,22 @@
+agent,iter_no,Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+claude,0,java,org.apache.commons.math3.util,MathArrays,2,0,67,63,1317,191,0,0,0.6119402985074627,96,8
+claude,1,java,org.apache.commons.math3.util,MathArrays,2,0,69,63,1319,188,0,0,0.5507246376811594,96,8
+claude,2,java,org.apache.commons.math3.util,MathArrays,2,0,70,63,1322,189,0,0,0.5428571428571428,96,8
+claude,3,java,org.apache.commons.math3.util,MathArrays,2,0,70,63,1284,189,0,0,0.5428571428571428,96,8
+claude,4,java,org.apache.commons.math3.util,MathArrays,2,0,72,63,1275,187,0,0,0.5416666666666666,96,8
+claude,5,java,org.apache.commons.math3.util,MathArrays,2,0,73,63,1263,182,0,0,0.5342465753424658,96,8
+claude,6,java,org.apache.commons.math3.util,MathArrays,2,0,72,62,1252,179,0,0,0.5138888888888888,96,8
+claude,7,java,org.apache.commons.math3.util,MathArrays,2,0,73,62,1261,179,0,0,0.5068493150684932,96,8
+claude,8,java,org.apache.commons.math3.util,MathArrays,2,0,74,62,1259,179,0,0,0.4864864864864865,96,8
+claude,9,java,org.apache.commons.math3.util,MathArrays,2,0,77,62,1289,183,0,0,0.4675324675324675,96,8
+claude,10,java,org.apache.commons.math3.util,MathArrays,2,0,81,62,1322,187,0,0,0.4444444444444444,96,8
+claude,11,java,org.apache.commons.math3.util,MathArrays,2,0,81,62,1321,187,0,0,0.4444444444444444,96,8
+claude,12,java,org.apache.commons.math3.util,MathArrays,2,0,81,62,1323,187,0,0,0.4444444444444444,96,8
+claude,13,java,org.apache.commons.math3.util,MathArrays,2,0,83,62,1323,181,0,0,0.4096385542168674,96,8
+claude,14,java,org.apache.commons.math3.util,MathArrays,4,0,83,62,1328,181,0,0,0.4096385542168674,96,8
+claude,15,java,org.apache.commons.math3.util,MathArrays,4,0,83,62,1325,180,0,0,0.4096385542168674,96,8
+claude,16,java,org.apache.commons.math3.util,MathArrays,4,0,83,62,1317,180,0,0,0.4096385542168674,96,8
+claude,17,java,org.apache.commons.math3.util,MathArrays,4,0,83,62,1318,180,0,0,0.4096385542168674,96,8
+claude,18,java,org.apache.commons.math3.util,MathArrays,4,0,84,62,1330,181,0,0,0.4166666666666667,96,8
+claude,19,java,org.apache.commons.math3.util,MathArrays,6,0,85,63,1345,182,0,0,0.4235294117647059,96,8
+claude,20,java,org.apache.commons.math3.util,MathArrays,6,0,85,63,1343,181,0,0,0.4117647058823529,96,8

@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "dc15001ddf3ea5275c3fdbbf54a1b5df1980b8a1",
+	"url": "https://github.com/apache/commons-math/commit/dc15001ddf3ea5275c3fdbbf54a1b5df1980b8a1",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private hasFractionalPart(value double) : boolean extracted from private roundUnscaled(unscaled double, sign double, roundingMethod int) : double in class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 444,
+		"endLine": 504,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 481,
+		"endLine": 481,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 503,
+		"endLine": 513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private hasFractionalPart(value double) : boolean"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 440,
+		"endLine": 500,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private roundUnscaled(unscaled double, sign double, roundingMethod int) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 477,
+		"endLine": 477,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasFractionalPart(unscaled)"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 483,
+		"endLine": 483,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "hasFractionalPart(unscaled)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter unscaled : double to value : double in method private hasFractionalPart(value double) : boolean from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 41,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "unscaled : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 481,
+		"endLine": 481,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 511,
+		"endLine": 511,
+		"startColumn": 46,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(Double.isInfinite(x)) to return Double.isInfinite(x) ? x : Double.NaN; in method public round(x double, scale int, roundingMethod int) : double from class org.apache.commons.math3.util.Precision",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 403,
+		"endLine": 407,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Double.isInfinite(x))"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 378,
+		"endLine": 409,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public round(x double, scale int, roundingMethod int) : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 403,
+		"endLine": 403,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return Double.isInfinite(x) ? x : Double.NaN;\n"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/util/Precision.java",
+		"startLine": 378,
+		"endLine": 405,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "public round(x double, scale int, roundingMethod int) : double"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,459 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/commons-math.git",
+	"sha1": "cc61948e99b603952f4d5bc86d5f501716c4260f",
+	"url": "https://github.com/apache/commons-math/commit/cc61948e99b603952f4d5bc86d5f501716c4260f",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private configurePercentileQuantile(p double) : void extracted from public getPercentile(p double) : double in class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 416,
+		"endLine": 454,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPercentile(p double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 442,
+		"endLine": 444,
+		"startColumn": 17,
+		"endColumn": 86,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 446,
+		"endLine": 448,
+		"startColumn": 17,
+		"endColumn": 86,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 439,
+		"endLine": 451,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 441,
+		"endLine": 445,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 445,
+		"endLine": 449,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 449,
+		"endLine": 451,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 524,
+		"endLine": 547,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private configurePercentileQuantile(p double) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 537,
+		"endLine": 539,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 541,
+		"endLine": 543,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 545,
+		"endLine": 545,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 534,
+		"endLine": 546,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 536,
+		"endLine": 540,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 540,
+		"endLine": 544,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 544,
+		"endLine": 546,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 416,
+		"endLine": 442,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPercentile(p double) : double"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "configurePercentileQuantile(p)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private validateSetQuantileSupport(impl UnivariateStatistic) : void extracted from public setPercentileImpl(percentileImpl UnivariateStatistic) : void in class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 654,
+		"endLine": 681,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setPercentileImpl(percentileImpl UnivariateStatistic) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 668,
+		"endLine": 668,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 670,
+		"endLine": 672,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 674,
+		"endLine": 676,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 678,
+		"endLine": 678,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 667,
+		"endLine": 679,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 669,
+		"endLine": 673,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 673,
+		"endLine": 677,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 677,
+		"endLine": 679,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 549,
+		"endLine": 575,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private validateSetQuantileSupport(impl UnivariateStatistic) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 563,
+		"endLine": 563,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 565,
+		"endLine": 567,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 569,
+		"endLine": 571,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 573,
+		"endLine": 573,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 562,
+		"endLine": 574,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 564,
+		"endLine": 568,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 568,
+		"endLine": 572,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 572,
+		"endLine": 574,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 695,
+		"endLine": 710,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setPercentileImpl(percentileImpl UnivariateStatistic) : void"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 708,
+		"endLine": 708,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "validateSetQuantileSupport(percentileImpl)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter percentileImpl : UnivariateStatistic to impl : UnivariateStatistic in method private validateSetQuantileSupport(impl UnivariateStatistic) : void from class org.apache.commons.math3.stat.descriptive.DescriptiveStatistics",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 665,
+		"endLine": 665,
+		"startColumn": 48,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "percentileImpl : UnivariateStatistic"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 668,
+		"endLine": 668,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 670,
+		"endLine": 672,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 674,
+		"endLine": 676,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 560,
+		"endLine": 560,
+		"startColumn": 52,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "impl : UnivariateStatistic"
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 563,
+		"endLine": 563,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 565,
+		"endLine": 567,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.java",
+		"startLine": 569,
+		"endLine": 571,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,12 @@
+{
+  "iteration": 1,
+  "source_repo": "baseline-commons-math",
+  "target_class": "src/main/java/org/apache/commons/math3/util/FastMath.java",
+  "timestamp": "2026-05-19T17:43:56.104879",
+  "status": "failure",
+  "failure": "Codex CLI not available",
+  "changed_files": [],
+  "explanation": null,
+  "tests": null,
+  "codex": null
+}
